@@ -6,7 +6,7 @@ import {GifExpertApp} from './GifExpertApp';
 
 ReactDOM.render(
  
-    <GifExpertApp />,
+    <GifExpertApp arreglodefault={['dumber']}/>,
  
   document.getElementById('root')
 );

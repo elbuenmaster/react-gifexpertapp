@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`gridItem testing snapshot 1`] = `
+<div
+  className="card animate__fadeIn"
+>
+  <img
+    alt="One Punch"
+    src="https://media4.giphy.com/media/yo3TC0yeHd53G/giphy.gif?cid=d469d910a8hyirxzp6u6pshnn3owbwv66xbwzg8l8kwsbxw6&amp;rid=giphy.gif"
+  />
+  <p>
+    One Punch
+  </p>
+</div>
+`;

@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { GifGridItem } from "../components/GifGridItem";
-import {getGifs} from "../helpers/getGifs";
 import { useFetchGifs } from "../hooks/useFetchGifs";
+import PropTypes from 'prop-types';
 
 export const GifGrid = ({ category }) => {
-  const apiKey = "eBHH7BLGeQviyhM8FyoIaVveWFeN72yl";
-  const url = `https://api.giphy.com/v1/gifs/search?q=${encodeURI(category)}&limit=10&api_key=${apiKey}`;
-
+ 
   /* const [images, setImages] = useState([]);
   useEffect(() => {
     getGifs(url)
@@ -14,7 +12,8 @@ export const GifGrid = ({ category }) => {
   }, [url]);
  */
 
-  const {data:images,loading}= useFetchGifs(url);
+  // al cargar la app por primera vez,data está vacio y loading esta en false
+  const {data:images,loading}= useFetchGifs(category);
  
   return (
     <>  
@@ -33,3 +32,7 @@ export const GifGrid = ({ category }) => {
    </> 
   );
 };
+
+GifGrid.ProTypes={
+  category:PropTypes.string.isRequired
+}
