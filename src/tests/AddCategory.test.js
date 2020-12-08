@@ -4,7 +4,7 @@ import "@testing-library/jest-dom";
 import { shallow } from "enzyme";
 import { AddCategory } from "../components/AddCategory";
 import PropTypes from "prop-types";
-
+// comentario
 describe("AddCategory", () => {
   // creamos una funcion vacia para simular el parametro que recibe setCategorias
   // const setCategorias=()=>{}
